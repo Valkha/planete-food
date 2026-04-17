@@ -21,7 +21,7 @@ export default function HomeClient() {
       <section className="relative min-h-150 h-[85vh] flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           {/* Spotlight CSS ultra-léger */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_#1a1a1a_0%,_#000000_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#1a1a1a_0%,#000000_100%)]" />
           <div className="absolute inset-0 bg-[url('/pattern-kimono.png')] opacity-[0.02] pointer-events-none" />
           <div className="absolute inset-0 bg-linear-to-t from-[#080808] via-transparent to-transparent" />
         </div>

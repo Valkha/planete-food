@@ -157,7 +157,7 @@ export default function OrdersList() {
                 className={`bg-neutral-900 border border-neutral-800 rounded-2xl p-5 flex flex-wrap md:flex-nowrap items-center justify-between gap-6 hover:border-neutral-700 transition shadow-xl ${(order.status === 'Livrée' || order.status === 'Annulée') ? 'opacity-40 grayscale' : ''}`}
               >
                 {/* NUMÉRO ET CLIENT */}
-                <div className="flex flex-col gap-2 min-w-[220px]">
+                <div className="flex flex-col gap-2 min-w-220px">
                   <div className="flex items-center gap-2">
                     <span className="bg-brand-primary text-white text-[14px] font-black px-3 py-1 rounded-md shadow-lg italic tracking-tighter">
                       #KBK-{order.id}
@@ -179,7 +179,7 @@ export default function OrdersList() {
 
                 {/* ADRESSE DE LIVRAISON DIRECTE */}
                 {isDelivery && (
-                  <div className="flex-1 min-w-[200px] max-w-xs bg-blue-500/5 px-4 py-3 rounded-xl border border-blue-500/10">
+                  <div className="flex-1 min-w-200px max-w-xs bg-blue-500/5 px-4 py-3 rounded-xl border border-blue-500/10">
                     <span className="text-[8px] text-blue-400/60 font-black uppercase tracking-widest mb-1 block">Destination</span>
                     <p className="text-white text-xs font-bold leading-tight">{order.delivery_address}</p>
                     <p className="text-blue-400 text-[10px] font-black mt-1 font-mono tracking-tighter">{order.delivery_zip}</p>

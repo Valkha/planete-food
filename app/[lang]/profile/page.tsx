@@ -57,7 +57,7 @@ export default function ProfilePage() {
                 </h1>
                 <p className="text-gray-500 font-bold text-xs uppercase tracking-widest opacity-70">{user.email}</p>
               </div>
-              <div className="bg-black/40 backdrop-blur-md border border-neutral-800 rounded-2xl p-6 text-center min-w-[200px]">
+              <div className="bg-black/40 backdrop-blur-md border border-neutral-800 rounded-2xl p-6 text-center min-w-200px">
                 <p className="text-[10px] font-bold text-gray-500 uppercase tracking-[0.3em] mb-1">Cagnotte Fidélité</p>
                 <p className="text-3xl font-display font-bold text-brand-primary">
                   {profile?.wallet_balance ? Number(profile.wallet_balance).toFixed(2) : "0.00"} <span className="text-sm">CHF</span>

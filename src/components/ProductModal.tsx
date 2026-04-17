@@ -167,7 +167,7 @@ export default function ProductModal({ item, onClose }: ProductModalProps) {
             />
           ) : (
             <div className="flex items-center justify-center h-full text-neutral-800 font-display text-5xl uppercase opacity-10 tracking-[0.4em]">
-              Kabuki
+              [Photo]
             </div>
           )}
 
@@ -183,7 +183,7 @@ export default function ProductModal({ item, onClose }: ProductModalProps) {
               <h2 className="text-3xl md:text-5xl font-display font-bold text-white uppercase tracking-tighter leading-none mb-2">
                 {name}
               </h2>
-              <span className="text-brand-primary text-[10px] uppercase font-black tracking-[0.4em]">Signature Kabuki</span>
+              <span className="text-brand-primary text-[10px] uppercase font-black tracking-[0.4em]">Signature</span>
             </div>
             <div className="text-3xl md:text-4xl font-bold text-white whitespace-nowrap">
               {Number(item.price).toFixed(2)} <span className="text-xs text-neutral-500 uppercase ml-1">chf</span>
@@ -193,7 +193,7 @@ export default function ProductModal({ item, onClose }: ProductModalProps) {
           <div className="mb-8 shrink-0">
             <h4 className="text-neutral-600 text-[10px] uppercase font-black tracking-[0.3em] mb-4">Description de la création</h4>
             <p className="text-neutral-400 text-sm md:text-lg leading-relaxed italic font-light max-w-2xl">
-              {desc || "L'excellence du sushi Kabuki, préparée avec passion et précision."}
+              {desc || "Préparé avec passion et précision."}
             </p>
           </div>
 

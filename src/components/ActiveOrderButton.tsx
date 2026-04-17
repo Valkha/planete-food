@@ -15,7 +15,7 @@ export default function ActiveOrderButton() {
   useEffect(() => {
     // Vérifier la présence d'une commande dans le LocalStorage
     const checkActiveOrder = () => {
-      const savedOrder = localStorage.getItem("kabuki_active_order");
+      const savedOrder = localStorage.getItem("pf_active_order");
       setOrderId(savedOrder);
     };
 

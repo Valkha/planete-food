@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { restaurantConfig } from '@/config/restaurant';
 
 // ✅ Initialisation sécurisée : si la clé est manquante (build time), on ne crée pas l'instance
 // Cela évite l'erreur "Missing API key" qui bloque le déploiement.
@@ -23,9 +24,9 @@ export async function POST(request: Request) {
 
     // Envoi de l'e-mail via Resend
     const { data, error } = await resend.emails.send({
-      from: 'Kabuki Sushi - Site Web <onboarding@resend.dev>',
-      to: ['adrien.garcon@gmail.com'], 
-      subject: `🍣 Nouvelle demande Kabuki : ${subject}`,
+      from: `${restaurantConfig.name} - Site Web <onboarding@resend.dev>`,
+      to: [restaurantConfig.email || 'contact@example.com'],
+      subject: `Nouvelle demande : ${subject}`,
       html: `
         <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #1a1a1a; max-width: 600px; margin: 0 auto; border: 1px solid #eee; border-radius: 12px; overflow: hidden;">
           <div style="background-color: #000; padding: 30px; text-align: center;">
@@ -33,7 +34,7 @@ export async function POST(request: Request) {
           </div>
           
           <div style="padding: 30px; background-color: #ffffff;">
-            <p style="font-size: 16px; margin-bottom: 25px;">Vous avez reçu un nouveau message depuis le formulaire de contact du site <strong>Kabuki Sushi</strong>.</p>
+            <p style="font-size: 16px; margin-bottom: 25px;">Vous avez reçu un nouveau message depuis le formulaire de contact du site <strong>${restaurantConfig.name}</strong>.</p>
             
             <table style="width: 100%; border-collapse: collapse;">
               <tr>
@@ -71,7 +72,7 @@ export async function POST(request: Request) {
           </div>
           
           <div style="background-color: #f4f4f4; padding: 20px; text-align: center; color: #999; font-size: 12px;">
-            Cet e-mail a été généré automatiquement par le système de contact de kabukisushi.ch
+            Cet e-mail a été généré automatiquement par le système de contact de ${restaurantConfig.siteUrl}
           </div>
         </div>
       `,

@@ -83,7 +83,7 @@ export default function Navbar({ onOpenCart }: NavbarProps) {
         >
           <Image 
             src="/images/logo.png" 
-            alt="Kabuki Logo" 
+            alt="Logo" 
             width={120} 
             height={120}
             className="w-full h-auto object-contain"

@@ -53,7 +53,7 @@ export default function ProfilePage() {
               </div>
               <div className="text-center md:text-left flex-1">
                 <h1 className="text-3xl font-display font-bold text-white uppercase tracking-wider mb-2">
-                  {profile?.full_name || (profile?.is_admin ? "Admin Kabuki" : "Client Kabuki")}
+                  {profile?.full_name || (profile?.is_admin ? "Administrateur" : "Client")}
                 </h1>
                 <p className="text-gray-500 font-bold text-xs uppercase tracking-widest opacity-70">{user.email}</p>
               </div>

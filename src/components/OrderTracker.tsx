@@ -71,7 +71,7 @@ export default function OrderTracker({ orderId }: OrderTrackerProps) {
   }, [orderId, supabase]); // Ajout de supabase dans le tableau des dépendances
 
   const handleFinish = () => {
-    localStorage.removeItem("kabuki_active_order");
+    localStorage.removeItem("pf_active_order");
   };
 
   if (loading) return <div className="flex justify-center p-10"><Loader2 className="animate-spin text-brand-primary" /></div>;

@@ -46,14 +46,14 @@ export default function OrdersList() {
   useEffect(() => {
     audioRef.current = new Audio("/sounds/notification.wav");
     audioRef.current.load();
-    const savedSoundPref = localStorage.getItem("kabuki_admin_sound");
+    const savedSoundPref = localStorage.getItem("pf_admin_sound");
     if (savedSoundPref !== null) setIsSoundEnabled(savedSoundPref === "true");
   }, []);
 
   const toggleSound = () => {
     const nextState = !isSoundEnabled;
     setIsSoundEnabled(nextState);
-    localStorage.setItem("kabuki_admin_sound", String(nextState));
+    localStorage.setItem("pf_admin_sound", String(nextState));
     if (audioRef.current) audioRef.current.play().catch(() => {});
   };
 

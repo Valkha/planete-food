@@ -82,7 +82,7 @@ export default function TraiteurPage() {
         <div className="absolute inset-0 z-0">
             <Image 
                 src="/images/traiteur-hero-bg.jpg"
-                alt="Traiteur événementiel Kabuki"
+                alt="Traiteur événementiel"
                 fill
                 className="object-cover opacity-40 scale-105"
                 priority
@@ -112,10 +112,10 @@ export default function TraiteurPage() {
         </div>
       </section>
 
-      {/* --- L'EXPÉRIENCE KABUKI --- */}
+      {/* --- L'EXPÉRIENCE TRAITEUR --- */}
       <section className="py-24 bg-neutral-900 text-white relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 text-brand-primary/5 text-[10rem] font-display font-bold whitespace-nowrap select-none z-0">
-          KABUKI CATERING
+          CATERING
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
@@ -164,7 +164,7 @@ export default function TraiteurPage() {
       <section className="py-24 bg-white overflow-hidden">
         <div className="container mx-auto px-6 mb-12">
             <h2 className="text-4xl font-display font-bold uppercase text-brand-black mb-4 flex items-center gap-4">
-                <Camera className="text-brand-primary" /> Instantanés Kabuki
+                <Camera className="text-brand-primary" /> Galerie
             </h2>
             <div className="w-16 h-1 bg-brand-primary"></div>
         </div>

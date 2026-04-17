@@ -35,7 +35,7 @@ interface DeliveryMapProps {
 }
 
 export default function DeliveryMap({ driverLat, driverLng }: DeliveryMapProps) {
-  // Coordonnées du restaurant Kabuki (Ex: 1 Bd de la Tour, Genève)
+  // Coordonnées du restaurant (à configurer via restaurantConfig)
   const restaurantLocation = { lat: 46.1978, lng: 6.1432 }; 
   const [mounted, setMounted] = useState(false);
 
@@ -58,7 +58,7 @@ export default function DeliveryMap({ driverLat, driverLng }: DeliveryMapProps) 
         style={{ height: '100%', width: '100%', backgroundColor: '#171717' }}
         zoomControl={false}
       >
-        {/* Tuile de carte sombre pour coller au design Kabuki */}
+        {/* Tuile de carte sombre */}
         <TileLayer
           url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
@@ -68,13 +68,13 @@ export default function DeliveryMap({ driverLat, driverLng }: DeliveryMapProps) 
 
         {/* Marqueur du Restaurant */}
         <Marker position={[restaurantLocation.lat, restaurantLocation.lng]} icon={restaurantIcon}>
-          <Popup className="kabuki-popup">Kabuki Sushi</Popup>
+          <Popup className="map-popup">Restaurant</Popup>
         </Marker>
 
         {/* Marqueur du Livreur (s'il est en route) */}
         {driverLat && driverLng && (
           <Marker position={[driverLat, driverLng]} icon={driverIcon}>
-            <Popup className="kabuki-popup">Votre livreur est en approche !</Popup>
+            <Popup className="map-popup">Votre livreur est en approche !</Popup>
           </Marker>
         )}
       </MapContainer>

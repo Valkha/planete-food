@@ -37,7 +37,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   // 🔄 Charger le panier depuis la mémoire du navigateur au démarrage
   useEffect(() => {
-    const savedCart = localStorage.getItem("kabuki_cart");
+    const savedCart = localStorage.getItem("pf_cart");
     if (savedCart) {
       try {
         const parsedCart = JSON.parse(savedCart);
@@ -55,7 +55,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // 💾 Sauvegarder le panier à chaque modification
   useEffect(() => {
     if (isLoaded) {
-      localStorage.setItem("kabuki_cart", JSON.stringify(items));
+      localStorage.setItem("pf_cart", JSON.stringify(items));
     }
   }, [items, isLoaded]);
 
@@ -88,7 +88,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const clearCart = () => {
     setItems([]);
     if (typeof window !== 'undefined') {
-      localStorage.removeItem("kabuki_cart");
+      localStorage.removeItem("pf_cart");
     }
   };
 

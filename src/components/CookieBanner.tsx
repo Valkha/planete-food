@@ -10,7 +10,7 @@ export default function CookieBanner() {
   const { t } = useTranslation(); // ✅ Désormais utilisé plus bas
 
   useEffect(() => {
-    const consent = localStorage.getItem("kabuki_cookie_consent");
+    const consent = localStorage.getItem("pf_cookie_consent");
     if (!consent) {
       const timer = setTimeout(() => setIsVisible(true), 2000);
       return () => clearTimeout(timer);
@@ -18,7 +18,7 @@ export default function CookieBanner() {
   }, []);
 
   const handleConsent = (status: "accepted" | "declined") => {
-    localStorage.setItem("kabuki_cookie_consent", status);
+    localStorage.setItem("pf_cookie_consent", status);
     setIsVisible(false);
   };
 

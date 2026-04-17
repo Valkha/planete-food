@@ -18,10 +18,10 @@ function TrackContent() {
     const initTracking = async () => {
       if (urlOrderId) {
         // L'ID est déjà dans le state, on a juste à le sauvegarder en mémoire
-        localStorage.setItem("kabuki_active_order", urlOrderId);
+        localStorage.setItem("pf_active_order", urlOrderId);
       } else {
         // Si l'URL est vide, on va fouiller dans la mémoire du téléphone
-        const savedOrderId = localStorage.getItem("kabuki_active_order");
+        const savedOrderId = localStorage.getItem("pf_active_order");
         if (savedOrderId) {
           setOrderId(Number(savedOrderId));
         }

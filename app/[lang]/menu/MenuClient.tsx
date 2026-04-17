@@ -104,7 +104,7 @@ const MenuItemCard = memo(({ item, index, onClick }: { item: MenuItem; index: nu
           </>
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-neutral-800 italic text-neutral-500 text-[10px] uppercase tracking-tighter">
-            KABUKI SUSHI
+            [Photo]
           </div>
         )}
         <div className="absolute top-2 right-2 bg-black/50 backdrop-blur-md p-1.5 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">

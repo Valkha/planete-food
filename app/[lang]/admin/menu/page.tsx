@@ -316,12 +316,14 @@ export default function AdminMenu() {
                     <select className="w-full bg-black border border-neutral-800 p-3 rounded-xl outline-none focus:border-brand-primary transition text-white" value={form.category} onChange={e => setForm({...form, category: e.target.value})}>
                       <option value="Makis">Makis</option>
                       <option value="Sushis">Sushis</option>
-                      <option value="Les Signatures (Créations Kabuki)">Signatures</option>
-                      <option value="Box à Partager">Box</option>
+                      <option value="Nos Spécialités">Nos Spécialités</option>
+                      <option value="Entrées">Entrées</option>
+                      <option value="Plats Principaux">Plats Principaux</option>
+                      <option value="Accompagnements">Accompagnements</option>
+                      <option value="Desserts">Desserts</option>
                       <option value="Boissons">Boissons</option>
-                      <option value="Hand Roll">Hand Roll</option>
-                      <option value="Yakitori">Yakitori</option>
-                      <option value="Entrées & Accompagnements">Entrées & Accompagnements</option>
+                      <option value="Formules">Formules</option>
+                      <option value="À Partager">À Partager</option>
                     </select>
                   </div>
                 </div>

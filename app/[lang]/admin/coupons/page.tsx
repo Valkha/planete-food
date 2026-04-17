@@ -188,7 +188,7 @@ export default function AdminCouponsPage() {
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="text-[10px] uppercase text-gray-500 font-bold mb-2 block tracking-widest">Code (Ex: KABUKI20)</label>
+                  <label className="text-[10px] uppercase text-gray-500 font-bold mb-2 block tracking-widest">Code (Ex: PROMO20)</label>
                   <input required className="w-full bg-black border border-neutral-800 p-4 rounded-2xl outline-none focus:border-brand-primary transition text-white font-black" value={form.code} onChange={e => setForm({...form, code: e.target.value.toUpperCase()})} placeholder="BIENVENUE5" />
                 </div>
 

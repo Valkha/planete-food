@@ -89,7 +89,7 @@ export default function PageLoader() {
             >
               <Image 
                 src="/images/logo.png" 
-                alt="Kabuki" 
+                alt="Logo"
                 width={100} 
                 height={100} 
                 priority
@@ -103,7 +103,7 @@ export default function PageLoader() {
             animate={{ opacity: 1 }}
             className="text-white/60 font-display uppercase tracking-[0.3em] mt-8 text-[10px] font-bold"
           >
-            Kabuki Sushi
+            Chargement...
           </m.p>
         </m.div>
       )}

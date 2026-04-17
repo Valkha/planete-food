@@ -115,7 +115,7 @@ export default function AuthModal({ isOpen, onClose }: AuthModalProps) {
                   {isLogin ? "Connexion" : "Créer un compte"}
                 </h2>
                 <p className="text-gray-400 text-xs font-bold uppercase tracking-widest">
-                  {isLogin ? "Accédez à votre cagnotte fidélité" : "Rejoignez le club Kabuki"}
+                  {isLogin ? "Accédez à votre cagnotte fidélité" : "Créez votre compte fidélité"}
                 </p>
               </div>
 

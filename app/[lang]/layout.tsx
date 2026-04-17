@@ -3,45 +3,46 @@ import { Inter, Oswald } from "next/font/google";
 import "../globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { CartProvider } from "@/context/CartContext";
-import { UserProvider } from "@/context/UserContext"; 
-import LayoutClient from "@/components/LayoutClient"; 
+import { UserProvider } from "@/context/UserContext";
+import LayoutClient from "@/components/LayoutClient";
 import ActiveOrderButton from "@/components/ActiveOrderButton";
 
-// Définition des polices
-const inter = Inter({ 
-  subsets: ["latin"], 
+const inter = Inter({
+  subsets: ["latin"],
   variable: "--font-inter",
   display: 'swap',
 });
 
-const oswald = Oswald({ 
-  subsets: ["latin"], 
+const oswald = Oswald({
+  subsets: ["latin"],
   variable: "--font-oswald",
   display: 'swap',
-  weight: ['400', '700'], 
+  weight: ['400', '700'],
 });
 
-// Utilisation correcte de Metadata pour le SEO
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: Promise<{ lang: string }> 
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ lang: string }>
 }): Promise<Metadata> {
   const resolvedParams = await params;
   const lang = resolvedParams.lang || 'fr';
-  const siteUrl = 'https://kabuki-sushi.ch';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://planet-food.example.com';
+  const restaurantName = process.env.NEXT_PUBLIC_RESTAURANT_NAME ?? 'Planet Food';
 
   return {
     metadataBase: new URL(siteUrl),
     title: {
-      template: '%s | Kabuki Sushi Genève',
-      default: lang === 'en' ? 'Kabuki Sushi | Premium Japanese Restaurant in Geneva' : 'Kabuki Sushi | Restaurant Japonais de Prestige à Genève',
+      template: `%s | ${restaurantName}`,
+      default: lang === 'en'
+        ? `${restaurantName} | Online Ordering & Catering`
+        : `${restaurantName} | Commande en Ligne & Traiteur`,
     },
-    description: lang === 'en' 
-      ? "Excellence in sushi in Geneva (Plainpalais). Enjoy our signature creations dining in, takeaway, or through our exceptional catering service."
-      : "L'excellence du sushi à Genève (Plainpalais). Savourez nos créations signatures sur place, à emporter ou via notre service traiteur d'exception.",
-    keywords: ["Sushi Genève", "Traiteur Japonais Genève", "Restaurant Japonais Plainpalais", "Livraison Sushi Genève", "Sushi Delivery Geneva"],
-    authors: [{ name: "Kabuki Sushi" }],
+    description: lang === 'en'
+      ? "Order online, takeaway or delivery. Discover our menu and premium catering service."
+      : "Commandez en ligne, à emporter ou en livraison. Découvrez notre carte et notre service traiteur d'exception.",
+    keywords: ["restaurant", "commande en ligne", "livraison", "traiteur", "catering"],
+    authors: [{ name: restaurantName }],
     alternates: {
       canonical: `${siteUrl}/${lang}`,
       languages: {
@@ -52,9 +53,9 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "website",
-      locale: lang === 'fr' ? 'fr_CH' : lang === 'en' ? 'en_CH' : 'es_CH',
+      locale: lang === 'fr' ? 'fr_FR' : lang === 'en' ? 'en_US' : 'es_ES',
       url: `${siteUrl}/${lang}`,
-      title: "Kabuki Sushi | L'Art du Sushi à Genève",
+      title: restaurantName,
       images: [{ url: "/images/og-image.jpg", width: 1200, height: 630 }],
     },
     icons: { icon: "/images/logo.png" },
@@ -71,8 +72,10 @@ export default async function RootLayout({
   const resolvedParams = await params;
   const lang = resolvedParams.lang || 'fr';
 
-  // ✅ SÉCURITÉ #7 : Récupération du numéro via variable d'environnement
-  const contactPhone = process.env.NEXT_PUBLIC_CONTACT_PHONE || "";
+  const restaurantName = process.env.NEXT_PUBLIC_RESTAURANT_NAME ?? "Planet Food";
+  const contactPhone = process.env.NEXT_PUBLIC_CONTACT_PHONE ?? "";
+  const restaurantAddress = process.env.NEXT_PUBLIC_RESTAURANT_ADDRESS ?? "";
+  const cuisine = process.env.NEXT_PUBLIC_RESTAURANT_CUISINE ?? "Restauration";
 
   return (
     <html lang={lang} className={`${inter.variable} ${oswald.variable}`} suppressHydrationWarning>
@@ -92,17 +95,14 @@ export default async function RootLayout({
                   __html: JSON.stringify({
                     "@context": "https://schema.org",
                     "@type": "Restaurant",
-                    "name": "Kabuki Sushi Genève",
+                    "name": restaurantName,
                     "address": {
                       "@type": "PostalAddress",
-                      "streetAddress": "1 Boulevard de la Tour",
-                      "addressLocality": "Genève",
-                      "postalCode": "1205",
-                      "addressCountry": "CH"
+                      "streetAddress": restaurantAddress
                     },
-                    "telephone": contactPhone, // ✅ SÉCURITÉ #7 : Plus de numéro hardcodé
+                    "telephone": contactPhone,
                     "priceRange": "$$",
-                    "servesCuisine": "Japanese, Sushi"
+                    "servesCuisine": cuisine
                   })
                 }}
               />

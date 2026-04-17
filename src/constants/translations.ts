@@ -1,34 +1,30 @@
 // src/constants/translations.ts
+// Template "Planet Food" — remplacer les valeurs par celles de votre restaurant.
 
 export const translations = {
   fr: {
     nav: { home: "Accueil", menu: "La Carte", catering: "Traiteur", contact: "Contact" },
     hero: {
-      subtitle: "L'Art Culinaire Japonais",
-      title_top: "Kabuki",
-      title_bottom: "Sushi",
-      desc: "Une fusion entre tradition millénaire et audace moderne. Dégustez l'excellence, sur place ou chez vous.",
+      subtitle: "Saveurs Authentiques & Créations d'Exception",
+      title_top: "Planet",
+      title_bottom: "Food",
+      desc: "Une expérience gastronomique d'exception. Découvrez nos créations sur place, à emporter ou livrées chez vous.",
       btnMenu: "Découvrir la Carte",
       btnTraiteur: "Service Traiteur"
     },
     menu: {
       title: "La Carte",
-      subtitle: "Une sélection rigoureuse des meilleurs produits pour un voyage culinaire d'exception.",
+      subtitle: "Une sélection rigoureuse pour un voyage culinaire d'exception.",
       all: "Tous",
       categories: {
-        "Les Signatures (Créations Kabuki)": "Les Signatures",
-        "Burrito Sushi (Format généreux)": "Burrito Sushi",
-        "Tartares & Chirashi": "Tartares & Chirashi",
-        "Salmon Roll": "Salmon Roll",
-        "Thon 'Toro' de Qualité Premium": "Thon Toro Premium",
-        "Nigiri": "Nigiri",
-        "Gunkan": "Gunkan",
-        "Tataki & Sashimi": "Tataki & Sashimi",
-        "Futomaki": "Futomaki",
-        "Maki & California (8 pièces)": "Maki & California",
-        "Harumaki (Rouleaux de printemps - 8 pièces)": "Harumaki",
-        "Entrées & Accompagnements": "Entrées & Accompagnements",
-        "Box à Partager": "Box à Partager"
+        "Nos Spécialités": "Nos Spécialités",
+        "Entrées": "Entrées",
+        "Plats Principaux": "Plats Principaux",
+        "Accompagnements": "Accompagnements",
+        "Desserts": "Desserts",
+        "Boissons": "Boissons",
+        "Formules": "Formules",
+        "À Partager": "À Partager"
       }
     },
     testimonials: {
@@ -36,37 +32,37 @@ export const translations = {
       subtitle: "Ils ont goûté",
       rating: "Noté {note}/5 sur plus de 150 avis Google.",
       items: [
-        { name: "Sophie M.", role: "Mariage", text: "Une prestation exceptionnelle pour notre mariage. La qualité du buffet a impressionné tous nos invités." },
-        { name: "Thomas D.", role: "Entreprise", text: "Toujours ponctuel, magnifiquement présenté et délicieux. Le meilleur japonais de la région." },
-        { name: "Élodie & Marc", role: "Dîner privé", text: "Un voyage au Japon sans quitter notre salon. Une expérience culinaire recommandée." }
+        { name: "Sophie M.", role: "Événement Privé", text: "Une prestation exceptionnelle pour notre événement. La qualité des plats a impressionné tous nos invités." },
+        { name: "Thomas D.", role: "Entreprise", text: "Toujours ponctuel, magnifiquement présenté et délicieux. Le meilleur restaurant de la région." },
+        { name: "Élodie & Marc", role: "Dîner en famille", text: "Un repas mémorable dans un cadre chaleureux. Une expérience culinaire que nous recommandons chaleureusement." }
       ]
     },
     cta: {
       title: "Prêt à commander ?",
-      desc: "Nos chefs sont prêts à préparer votre commande. Livraison rapide ou à emporter.",
+      desc: "Notre équipe est prête à préparer votre commande. Livraison rapide ou à emporter.",
       call: "Appeler"
     },
     catering: {
       title: "Service Traiteur de Prestige",
-      subtitle: "L'excellence japonaise pour vos réceptions.",
-      desc: "Mariages, cocktails dînatoires ou repas d'entreprise : nous créons des buffets de sushis raffinés pour tous vos événements à Genève.",
+      subtitle: "L'excellence gastronomique pour vos réceptions.",
+      desc: "Mariages, cocktails dînatoires ou repas d'entreprise : nous créons des buffets raffinés pour tous vos événements.",
       btnHero: "Demander un devis gratuit",
       experienceTitle: "L'Art de Recevoir",
       blocs: [
         {
-          tag: "01. SAVOIR-FAIRE & TRADITION",
-          title: "L'Excellence de nos Maîtres Sushi",
-          desc: "Nos chefs, formés aux techniques traditionnelles, préparent chaque pièce avec une rigueur absolue pour garantir une expérience gastronomique authentique."
+          tag: "01. SAVOIR-FAIRE & PASSION",
+          title: "L'Excellence de nos Chefs",
+          desc: "Nos chefs, passionnés et expérimentés, préparent chaque plat avec une rigueur absolue pour garantir une expérience gastronomique authentique."
         },
         {
-          tag: "02. FRAÎCHEUR ABSOLUE",
-          title: "Une Qualité Intransigeante",
-          desc: "Nous sélectionnons nos poissons quotidiennement auprès des meilleures pêcheries pour vous offrir le meilleur de la mer, dans le respect strict des saveurs."
+          tag: "02. QUALITÉ IRRÉPROCHABLE",
+          title: "Des Produits Soigneusement Sélectionnés",
+          desc: "Nous sélectionnons nos ingrédients auprès des meilleurs producteurs pour vous offrir le meilleur, dans le respect strict des saveurs et de la fraîcheur."
         },
         {
-          tag: "03. RAFFINEMENT VISUEL",
-          title: "L'Élégance sur votre Table",
-          desc: "Nos dressages sont pensés pour sublimer vos tables, mêlant épure japonaise et esthétique moderne pour ravir les yeux autant que les papilles."
+          tag: "03. PRÉSENTATION SOIGNÉE",
+          title: "L'Élégance dans l'Assiette",
+          desc: "Nos dressages sont pensés pour sublimer votre table, mêlant esthétique moderne et raffinement pour ravir les yeux autant que les papilles."
         }
       ],
       formSection: {
@@ -94,40 +90,35 @@ export const translations = {
       follow: "Suivez-nous"
     },
     footer: {
-      desc: "L'excellence de l'art culinaire japonais au cœur de Genève. Une expérience unique, sur place ou chez vous.",
+      desc: "L'excellence gastronomique à votre service. Une expérience unique, sur place ou chez vous.",
       linksTitle: "Navigation",
       contactTitle: "Nous trouver",
-      rights: "© 2026 Kabuki Sushi Genève. Tous droits réservés."
+      rights: "© 2026 Planet Food. Tous droits réservés."
     }
   },
   en: {
     nav: { home: "Home", menu: "Menu", catering: "Catering", contact: "Contact" },
     hero: {
-      subtitle: "Japanese Culinary Art",
-      title_top: "Kabuki",
-      title_bottom: "Sushi",
-      desc: "A fusion of ancient tradition and modern audacity. Experience excellence at the restaurant or at home.",
+      subtitle: "Authentic Flavors & Exceptional Creations",
+      title_top: "Planet",
+      title_bottom: "Food",
+      desc: "An exceptional gastronomic experience. Discover our creations dine-in, takeaway, or delivered to your door.",
       btnMenu: "Discover the Menu",
       btnTraiteur: "Catering Service"
     },
     menu: {
       title: "The Menu",
-      subtitle: "A rigorous selection of the best products for an exceptional culinary journey.",
+      subtitle: "A rigorous selection for an exceptional culinary journey.",
       all: "All",
       categories: {
-        "Les Signatures (Créations Kabuki)": "Signatures",
-        "Burrito Sushi (Format généreux)": "Sushi Burritos",
-        "Tartares & Chirashi": "Tartares & Chirashi",
-        "Salmon Roll": "Salmon Roll",
-        "Thon 'Toro' de Qualité Premium": "Premium Toro Tuna",
-        "Nigiri": "Nigiri",
-        "Gunkan": "Gunkan",
-        "Tataki & Sashimi": "Tataki & Sashimi",
-        "Futomaki": "Futomaki",
-        "Maki & California (8 pièces)": "Maki & California",
-        "Harumaki (Rouleaux de printemps - 8 pièces)": "Spring Rolls",
-        "Entrées & Accompagnements": "Starters & Sides",
-        "Box à Partager": "Sharing Boxes"
+        "Nos Spécialités": "Our Specialties",
+        "Entrées": "Starters",
+        "Plats Principaux": "Main Courses",
+        "Accompagnements": "Side Dishes",
+        "Desserts": "Desserts",
+        "Boissons": "Drinks",
+        "Formules": "Set Menus",
+        "À Partager": "To Share"
       }
     },
     testimonials: {
@@ -135,37 +126,37 @@ export const translations = {
       subtitle: "Reviews",
       rating: "Rated {note}/5 on over 150 Google reviews.",
       items: [
-        { name: "Sophie M.", role: "Wedding", text: "Exceptional service for our wedding. The quality of the buffet impressed all our guests." },
-        { name: "Thomas D.", role: "Corporate", text: "Always on time, beautifully presented and delicious. The best Japanese in the area." },
-        { name: "Élodie & Marc", role: "Private Dinner", text: "A trip to Japan without leaving our living room. Highly recommended culinary experience." }
+        { name: "Sophie M.", role: "Private Event", text: "Exceptional service for our event. The quality of the dishes impressed all our guests." },
+        { name: "Thomas D.", role: "Corporate", text: "Always on time, beautifully presented and delicious. The best restaurant in the area." },
+        { name: "Élodie & Marc", role: "Family Dinner", text: "A memorable meal in a warm atmosphere. A culinary experience we warmly recommend." }
       ]
     },
     cta: {
       title: "Ready to order?",
-      desc: "Our chefs are ready to prepare your order. Fast delivery or takeaway.",
+      desc: "Our team is ready to prepare your order. Fast delivery or takeaway.",
       call: "Call"
     },
     catering: {
       title: "Prestige Catering Service",
-      subtitle: "Japanese excellence for your receptions.",
-      desc: "Weddings, cocktail parties, or corporate events: we create refined sushi buffets for all your occasions in Geneva.",
+      subtitle: "Gastronomic excellence for your receptions.",
+      desc: "Weddings, cocktail parties, or corporate events: we create refined buffets for all your occasions.",
       btnHero: "Request a free quote",
       experienceTitle: "The Art of Hosting",
       blocs: [
         {
-          tag: "01. MASTERY & TRADITION",
-          title: "The Excellence of our Sushi Masters",
-          desc: "Our chefs, trained in traditional techniques, prepare each piece with absolute rigor to guarantee an authentic gastronomic experience."
+          tag: "01. EXPERTISE & PASSION",
+          title: "The Excellence of Our Chefs",
+          desc: "Our passionate and experienced chefs prepare each dish with absolute rigor to guarantee an authentic gastronomic experience."
         },
         {
-          tag: "02. ABSOLUTE FRESHNESS",
-          title: "Uncompromising Quality",
-          desc: "We select our fish daily from the best fisheries to offer you the finest seafood, strictly respecting natural flavors."
+          tag: "02. IMPECCABLE QUALITY",
+          title: "Carefully Selected Produce",
+          desc: "We source our ingredients from the finest producers to offer you the very best, with strict respect for flavors and freshness."
         },
         {
-          tag: "03. VISUAL REFINEMENT",
-          title: "Elegance on Your Table",
-          desc: "Our arrangements are designed to enhance your tables, blending Japanese minimalism with modern aesthetics."
+          tag: "03. REFINED PRESENTATION",
+          title: "Elegance on Your Plate",
+          desc: "Our plating is designed to elevate your table, blending modern aesthetics with refinement to delight the eyes as much as the palate."
         }
       ],
       formSection: {
@@ -193,40 +184,35 @@ export const translations = {
       follow: "Follow Us"
     },
     footer: {
-      desc: "The excellence of Japanese culinary art in the heart of Geneva. A unique experience, at the restaurant or at home.",
+      desc: "Gastronomic excellence at your service. A unique experience, dine-in or at home.",
       linksTitle: "Links",
       contactTitle: "Find Us",
-      rights: "© 2026 Kabuki Sushi Geneva. All rights reserved."
+      rights: "© 2026 Planet Food. All rights reserved."
     }
   },
   es: {
     nav: { home: "Inicio", menu: "La Carta", catering: "Catering", contact: "Contacto" },
     hero: {
-      subtitle: "Arte Culinario Japonés",
-      title_top: "Kabuki",
-      title_bottom: "Sushi",
-      desc: "Una fusión entre tradición milenaria y audacia moderna. Disfrute de la excelencia en el local o en casa.",
+      subtitle: "Sabores Auténticos & Creaciones de Excepción",
+      title_top: "Planet",
+      title_bottom: "Food",
+      desc: "Una experiencia gastronómica excepcional. Descubra nuestras creaciones en el local, para llevar o con entrega a domicilio.",
       btnMenu: "Descubrir la Carta",
       btnTraiteur: "Servicio de Catering"
     },
     menu: {
       title: "La Carta",
-      subtitle: "Una rigurosa selección de los mejores productos para un viaje culinario excepcional.",
+      subtitle: "Una selección rigurosa para un viaje culinario excepcional.",
       all: "Todos",
       categories: {
-        "Les Signatures (Créations Kabuki)": "Firmas",
-        "Burrito Sushi (Format généreux)": "Burrito Sushi",
-        "Tartares & Chirashi": "Tártaros y Chirashi",
-        "Salmon Roll": "Roll de Salmón",
-        "Thon 'Toro' de Qualité Premium": "Atún Toro Premium",
-        "Nigiri": "Nigiri",
-        "Gunkan": "Gunkan",
-        "Tataki & Sashimi": "Tataki y Sashimi",
-        "Futomaki": "Futomaki",
-        "Maki & California (8 pièces)": "Maki y California",
-        "Harumaki (Rouleaux de printemps - 8 pièces)": "Rollitos de Primavera",
-        "Entrées & Accompagnements": "Entradas y Acompañamientos",
-        "Box à Partager": "Cajas para compartir"
+        "Nos Spécialités": "Nuestras Especialidades",
+        "Entrées": "Entrantes",
+        "Plats Principaux": "Platos Principales",
+        "Accompagnements": "Acompañamientos",
+        "Desserts": "Postres",
+        "Boissons": "Bebidas",
+        "Formules": "Menús",
+        "À Partager": "Para Compartir"
       }
     },
     testimonials: {
@@ -234,37 +220,37 @@ export const translations = {
       subtitle: "Opiniones",
       rating: "Calificado {note}/5 en más de 150 reseñas de Google.",
       items: [
-        { name: "Sophie M.", role: "Boda", text: "Servicio excepcional para nuestra boda. La calidad del buffet impresionó a todos los invitados." },
-        { name: "Thomas D.", role: "Empresa", text: "Siempre puntual, bellamente presentado y delicioso. El mejor japonés de la zona." },
-        { name: "Élodie & Marc", role: "Cena privée", text: "Un viaje a Japón sin salir de nuestro salón. Experiencia culinaria recomendada." }
+        { name: "Sophie M.", role: "Evento Privado", text: "Servicio excepcional para nuestro evento. La calidad de los platos impresionó a todos los invitados." },
+        { name: "Thomas D.", role: "Empresa", text: "Siempre puntual, bellamente presentado y delicioso. El mejor restaurante de la zona." },
+        { name: "Élodie & Marc", role: "Cena Familiar", text: "Una comida memorable en un ambiente cálido. Una experiencia culinaria que recomendamos encarecidamente." }
       ]
     },
     cta: {
       title: "¿Listo para pedir?",
-      desc: "Nuestros chefs están listos para preparar su pedido. Entrega rápida o para llevar.",
+      desc: "Nuestro equipo está listo para preparar su pedido. Entrega rápida o para llevar.",
       call: "Llamar"
     },
     catering: {
       title: "Servicio de Catering de Prestigio",
-      subtitle: "Excelencia japonesa para sus recepciones.",
-      desc: "Bodas, cócteles o cenas de empresa: creamos buffets de sushi refinados para todos sus eventos en Ginebra.",
+      subtitle: "Excelencia gastronómica para sus recepciones.",
+      desc: "Bodas, cócteles o eventos de empresa: creamos buffets refinados para todos sus eventos.",
       btnHero: "Solicitar presupuesto gratuito",
       experienceTitle: "El Arte de Recibir",
       blocs: [
         {
-          tag: "01. MAESTRÍA Y TRADICIÓN",
-          title: "La Excelencia de nuestros Maestros de Sushi",
-          desc: "Nuestros chefs, formados en técnicas tradicionales, preparan cada pieza con absoluto rigor para garantizar una experiencia auténtica."
+          tag: "01. EXPERIENCIA & PASIÓN",
+          title: "La Excelencia de Nuestros Chefs",
+          desc: "Nuestros chefs, apasionados y experimentados, preparan cada plato con absoluto rigor para garantizar una experiencia gastronómica auténtica."
         },
         {
-          tag: "02. FRESCURA ABSOLUTA",
-          title: "Calidad Intransigente",
-          desc: "Seleccionamos nuestros pescados a diario para ofrecerle lo mejor del mar, respetando estrictamente los sabores naturales."
+          tag: "02. CALIDAD IRREPROCHABLE",
+          title: "Ingredientes Cuidadosamente Seleccionados",
+          desc: "Seleccionamos nuestros ingredientes de los mejores productores para ofrecerle lo mejor, respetando estrictamente los sabores y la frescura."
         },
         {
-          tag: "03. REFINAMIENTO VISUAL",
-          title: "Elegancia en su Mesa",
-          desc: "Nuestros montajes están diseñados para realzar sus mesas, combinando la sobriedad japonesa con la estética moderna."
+          tag: "03. PRESENTACIÓN CUIDADA",
+          title: "Elegancia en el Plato",
+          desc: "Nuestros emplatados están diseñados para realzar su mesa, combinando estética moderna y refinamiento para deleitar tanto la vista como el paladar."
         }
       ],
       formSection: {
@@ -292,10 +278,10 @@ export const translations = {
       follow: "Síguenos"
     },
     footer: {
-      desc: "La excelencia del arte culinario japonés en el corazón de Ginebra. Una experiencia única, en el local o en su casa.",
+      desc: "Excelencia gastronómica a su servicio. Una experiencia única, en el local o en su casa.",
       linksTitle: "Navegación",
       contactTitle: "Ubicación",
-      rights: "© 2026 Kabuki Sushi Ginebra. Todos los derechos reservados."
+      rights: "© 2026 Planet Food. Todos los derechos reservados."
     }
   }
 };
